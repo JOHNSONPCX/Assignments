@@ -1,0 +1,83 @@
+@import url(https://db.onlinewebfonts.com/c/b86a36b86f07f668b7ba6b2825d1b093?family=Recta-Bold);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    height: 95%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pika{
+    position: absolute;
+    height: 70%;
+    left: 46%;
+}
+
+#inner1{
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgba(251, 197, 11);
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+#inner2{
+    width: 40%;
+    height: 100%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgba(251, 232, 181);
+}
+
+#logo{
+    position: absolute;
+    left: 5%;
+    top: 7%;
+}
+#content{
+    position: absolute;
+    top : 35%;
+    left: 10%;
+    font-size: 100px;
+}
+#content h1{
+    font-family: sans-serif;
+    font-weight: 200px;
+}
+#content h6{
+    font-family: "Recta-Bold";
+    font-size: 30px;
+    letter-spacing: 10px;
+    font-weight: 200px;
+}
+
+#ball{
+    top: 79.5%;
+    left: 3%;
+}
+p{
+    font-size: 30px;
+    width: 35%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 50px;
+    
+}
