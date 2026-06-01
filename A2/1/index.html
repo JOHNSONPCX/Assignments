@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScaleX - Insights & Blogs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="asstes/logo.png" style="width: 80px; height: 50px;">
+                <span class="logo-placeholder">ScaleX</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <button class="btn-get-started">Get Started</button>
+        </nav>
+    </div>
+    <div id="main">
+        <header class="page-header">
+            <h1>Insights & Blogs</h1>
+        </header>
+
+        <div class="filter-tabs">
+            <button class="tab active">All</button>
+            <button class="tab">Tech</button>
+            <button class="tab">SaaS</button>
+            <button class="tab">Marketing</button>
+        </div>
+
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="asstes/glass.png" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="card-content">
+                    <span class="category-tag">Tech</span>
+                    <h3 class="card-title">The Ultimate Guide To SaaS Marketing</h3>
+                    <p class="card-date">May 23, 2025</p>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="asstes/chair.png" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="card-content">
+                    <span class="category-tag">SaaS</span>
+                    <h3 class="card-title">5 Key Trends In SaaS Growth For 2025</h3>
+                    <p class="card-date">May 23, 2025</p>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="card-image">
+                    <img src="asstes/cat.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="card-content">
+                    <span class="category-tag">Marketing</span>
+                    <h3 class="card-title">How Data-Driven Strategies Are Important</h3>
+                    <p class="card-date">May 23, 2025</p>
+                </div>
+            </article>
+        </div>
+    </div>
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

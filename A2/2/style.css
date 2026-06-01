@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0c0c0c;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', serif;
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 40px 32px;
+}
+
+
+.site-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.site-title {
+    font-size: 52px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.header-icon {
+    display: flex;
+    justify-content: center;
+}
+
+
+.drinks-section {
+    margin-bottom: 48px;
+}
+
+.drinks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+.drink-card {
+    background-color: #141210;
+    border: 1px solid rgba(196, 131, 74, 0.15);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+.drink-card:hover{
+    border-color: rgba(196, 131, 74, 0.4);
+    box-shadow: 0 0 20px rgba(196, 131, 74, 0.08);
+}
+
+
+.card-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(30, 26, 22, 0.9);
+    border: 1px solid rgba(196, 131, 74, 0.3);
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #c4834a;
+    z-index: 2;
+}
+
+.badge-icon {
+    color: #c4834a;
+    font-size: 10px;
+}
+
+.badge-dot {
+    width: 7px;
+    height: 7px;
+    background-color: #c4834a;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.drink-image {
+    width: 100%;
+    height: 400px;
+    background-color: #1a1714;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+
+
+.drink-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+}
+
+.drink-desc {
+    font-size: 13px;
+    color: #8a8a8a;
+    margin-bottom: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.price-line {
+    width: 40px;
+    height: 1px;
+    background-color: rgba(196, 131, 74, 0.5);
+    margin: 0 auto 12px;
+}
+
+.drink-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #c4834a;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.chef-special {
+    margin-bottom: 48px;
+}
+
+.special-card {
+    background-color: #141210;
+    border: 1px solid rgba(196, 131, 74, 0.12);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.special-image {
+    width: 280px;
+    height: 260px;
+    background-color: #1a1714;
+    border-radius: 16px;
+    flex-shrink: 0;
+  
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.special-content {
+    flex: 1;
+    padding-right: 80px;
+}
+
+.special-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #c4834a;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    text-transform: uppercase;
+}
+
+.special-title {
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.special-subtitle {
+    font-size: 15px;
+    color: #a0a0a0;
+    margin-bottom: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.special-desc {
+    font-size: 14px;
+    color: #8a8a8a;
+    line-height: 1.7;
+    margin-bottom: 28px;
+    max-width: 480px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.explore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    color: #c4834a;
+    border: 1px solid rgba(196, 131, 74, 0.4);
+    border-radius: 24px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.explore-btn:hover {
+    background-color: rgba(196, 131, 74, 0.1);
+    border-color: rgba(196, 131, 74, 0.6);
+}
+
+.btn-arrow {
+    font-size: 16px;
+}
+
+.special-decor {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 160px;
+    height: 280px;
+    background-color: #1a1714;
+    opacity: 0.4;
+    border-radius: 80px 0 0 80px;
+
+}
+
+.site-footer {
+    border-top: 1px solid rgba(196, 131, 74, 0.15);
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left p {
+    font-size: 13px;
+    color: #8a8a8a;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-nav a {
+    font-size: 13px;
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.footer-nav a:hover {
+    color: #c4834a;
+}
+
+.nav-dot {
+    color: #555;
+    font-size: 8px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.follow-text {
+    font-size: 13px;
+    color: #8a8a8a;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(196, 131, 74, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c4834a;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+    background-color: rgba(196, 131, 74, 0.1);
+    border-color: rgba(196, 131, 74, 0.5);
+}
+
